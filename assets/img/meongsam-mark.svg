@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="멍삼연구소">
+  <circle cx="32" cy="34" r="27" fill="#A63D25"/>
+  <path d="M32 21 C32 16 32.5 12 33.5 8" stroke="#5E8C3A" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+  <path d="M33 12 C29 8 24.5 7.4 21.5 8.2 C24.5 11.4 29 12.6 33 12 Z" fill="#7FAE4E"/>
+  <path d="M33.3 10.5 C36.5 6.4 41 5.4 44.5 5.8 C41.6 9.2 37.4 10.8 33.3 10.5 Z" fill="#7FAE4E"/>
+  <circle cx="33.6" cy="6.6" r="2.2" fill="#E5482F"/>
+  <g fill="#FFF3E2">
+    <ellipse cx="32" cy="41" rx="10" ry="8.4"/>
+    <ellipse cx="20.6" cy="31.4" rx="3.9" ry="4.8" transform="rotate(-18 20.6 31.4)"/>
+    <ellipse cx="27.6" cy="26.4" rx="3.9" ry="4.9" transform="rotate(-6 27.6 26.4)"/>
+    <ellipse cx="36.4" cy="26.4" rx="3.9" ry="4.9" transform="rotate(6 36.4 26.4)"/>
+    <ellipse cx="43.4" cy="31.4" rx="3.9" ry="4.8" transform="rotate(18 43.4 31.4)"/>
+  </g>
+</svg>

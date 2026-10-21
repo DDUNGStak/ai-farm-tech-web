@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" role="img" aria-label="머리에 인삼 새싹이 난 강아지와 홍삼 간식">
+  <defs>
+    <g id="paw">
+      <ellipse cx="0" cy="6" rx="10" ry="8.5"/>
+      <ellipse cx="-11" cy="-6" rx="4" ry="5"/><ellipse cx="-4" cy="-12" rx="4" ry="5"/>
+      <ellipse cx="4" cy="-12" rx="4" ry="5"/><ellipse cx="11" cy="-6" rx="4" ry="5"/>
+    </g>
+    <clipPath id="frame"><circle cx="200" cy="196" r="172"/></clipPath>
+  </defs>
+
+  <circle cx="200" cy="196" r="172" fill="#FFF3E6"/>
+  <circle cx="200" cy="196" r="158" fill="none" stroke="#F1C9A8" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+  <g fill="#F1C9A8">
+    <use href="#paw" transform="translate(70 88) rotate(-22)"/>
+    <use href="#paw" transform="translate(338 112) rotate(18) scale(.8)"/>
+    <use href="#paw" transform="translate(52 250) rotate(-8) scale(.7)"/>
+  </g>
+
+  <g clip-path="url(#frame)">
+    <!-- 몸 -->
+    <path d="M86 400 C90 312 138 274 200 274 C262 274 310 312 314 400 Z" fill="#F7E6CC" stroke="#3F2014" stroke-width="4" stroke-linejoin="round"/>
+    <!-- 반다나 -->
+    <path d="M126 284 Q200 316 274 284 L250 304 Q200 356 150 304 Z" fill="#A63D25" stroke="#3F2014" stroke-width="4" stroke-linejoin="round"/>
+    <g fill="#FFE3D6"><circle cx="182" cy="312" r="3"/><circle cx="206" cy="326" r="3"/><circle cx="222" cy="306" r="3"/><circle cx="196" cy="300" r="2.4"/></g>
+  </g>
+
+  <!-- 귀 -->
+  <path d="M120 118 C84 124 60 176 68 232 C72 260 100 264 112 242 C122 222 128 172 142 140 Z" fill="#C98552" stroke="#3F2014" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M280 118 C316 124 340 176 332 232 C328 260 300 264 288 242 C278 222 272 172 258 140 Z" fill="#C98552" stroke="#3F2014" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- 새싹 (인삼 잎 + 열매) -->
+  <path d="M200 92 C200 74 203 60 208 46" stroke="#5E8C3A" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M205 58 C192 42 174 38 160 42 C170 57 190 63 205 58 Z" fill="#7FAE4E" stroke="#3F2014" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M206 52 C216 36 234 30 250 32 C242 47 223 55 206 52 Z" fill="#8DBB59" stroke="#3F2014" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="209" cy="42" r="8" fill="#E5482F" stroke="#3F2014" stroke-width="3"/>
+  <circle cx="206" cy="39" r="2.2" fill="#FFB4A2"/>
+
+  <!-- 머리 -->
+  <ellipse cx="200" cy="180" rx="98" ry="90" fill="#F7E6CC" stroke="#3F2014" stroke-width="4"/>
+  <path d="M220 134 C248 122 278 142 278 172 C278 192 260 198 242 192 C224 186 212 152 220 134 Z" fill="#E6BD8E"/>
+
+  <!-- 눈 -->
+  <circle cx="160" cy="174" r="11" fill="#2A140B"/>
+  <circle cx="240" cy="174" r="11" fill="#2A140B"/>
+  <circle cx="164" cy="170" r="3.6" fill="#fff"/>
+  <circle cx="244" cy="170" r="3.6" fill="#fff"/>
+  <!-- 볼 -->
+  <ellipse cx="136" cy="208" rx="14" ry="9" fill="#F4A894" opacity=".6"/>
+  <ellipse cx="264" cy="208" rx="14" ry="9" fill="#F4A894" opacity=".6"/>
+  <!-- 주둥이 -->
+  <ellipse cx="200" cy="216" rx="44" ry="32" fill="#FFF8EE"/>
+  <path d="M192 236 C192 254 208 254 208 236 Z" fill="#EE8C7A" stroke="#3F2014" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M200 216 V228 M200 228 C192 238 180 238 174 230 M200 228 C208 238 220 238 226 230" stroke="#3F2014" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M185 200 Q200 193 215 200 Q215 212 200 218 Q185 212 185 200 Z" fill="#2A140B"/>
+  <ellipse cx="195" cy="200" rx="4" ry="2.2" fill="#6B4A3A"/>
+
+  <!-- 홍삼 간식 -->
+  <g transform="translate(316 286) rotate(-22)">
+    <g fill="#A63D25" stroke="#3F2014" stroke-width="3.5">
+      <circle cx="-30" cy="-8" r="10"/><circle cx="-30" cy="8" r="10"/>
+      <circle cx="30" cy="-8" r="10"/><circle cx="30" cy="8" r="10"/>
+    </g>
+    <rect x="-31" y="-9" width="62" height="18" fill="#A63D25"/>
+    <path d="M-30 -9 H30 M-30 9 H30" stroke="#3F2014" stroke-width="3.5"/>
+    <g fill="#A63D25"><circle cx="-30" cy="-8" r="8.2"/><circle cx="-30" cy="8" r="8.2"/><circle cx="30" cy="-8" r="8.2"/><circle cx="30" cy="8" r="8.2"/></g>
+    <path d="M-22 -3 H18" stroke="#D9765C" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <g fill="#E9A23B">
+    <path d="M352 236 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+    <path d="M286 330 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z"/>
+  </g>
+</svg>

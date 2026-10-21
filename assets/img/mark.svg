@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI팜테크">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5D060"/>
+      <stop offset=".55" stop-color="#D4A017"/>
+      <stop offset="1" stop-color="#A67C00"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 17.5 A24 24 0 0 1 52 17.5" fill="none" stroke="url(#g)" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M32 14 L49.3 24 V44 L32 54 L14.7 44 V24 Z" fill="#1C1A0C" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M32.6 48 L32 28.5" stroke="#F5D060" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M32 33 C27 28.5 22 27.6 18.5 28.4 C22.5 31.6 27.5 33.4 32 33 Z" fill="#E7B934"/>
+  <path d="M32.3 30.5 C36.5 25.5 42 24.2 46.5 24.6 C42.6 28.6 37.4 30.8 32.3 30.5 Z" fill="#F5D060"/>
+  <g fill="#F7DC7A">
+    <circle cx="32" cy="14" r="2.4"/><circle cx="49.3" cy="24" r="2.4"/><circle cx="49.3" cy="44" r="2.4"/>
+    <circle cx="32" cy="54" r="2.4"/><circle cx="14.7" cy="44" r="2.4"/><circle cx="14.7" cy="24" r="2.4"/>
+  </g>
+</svg>
