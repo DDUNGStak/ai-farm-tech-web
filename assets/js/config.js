@@ -5,8 +5,8 @@
  */
 window.SITE_CONFIG = {
   links: {
-    // TODO: 멍삼연구소 네이버 스마트스토어 주소로 교체 (예: https://smartstore.naver.com/meongsamlab)
-    smartstore: 'https://smartstore.naver.com/',
+    // 멍삼연구소 네이버 스마트스토어 주소 — 스토어 개설 후 입력 (비워 두면 구매 버튼이 자동으로 숨겨집니다)
+    smartstore: '',
     // 선택: 유튜브 채널 주소 — 비워 두면 버튼이 숨겨집니다
     youtube: '',
     // 선택: 인스타그램 주소 — 비워 두면 버튼이 숨겨집니다
