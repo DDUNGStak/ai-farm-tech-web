@@ -15,6 +15,7 @@ assets/
   img/mark.svg             AI팜테크 로고 마크 (파비콘 겸용)
   img/meongsam-mark.svg    멍삼연구소 로고 마크
   img/meongsam-dog.svg     멍삼연구소 강아지 일러스트
+  img/og-image.png         공유용 대표 이미지 (카카오톡·SNS 미리보기, 1200×630)
 ```
 
 ## 자주 고칠 곳
@@ -38,7 +39,7 @@ python -m http.server 8790 --directory C:/Users/dygks/ai-farm-tech-web
 - [ ] 협력 기관·기업 이름 공개 동의 확인 (`#partners` 섹션)
 - [ ] 문의 이메일을 대표 개인 주소 대신 `contact@` 같은 공용 주소로 바꿀지 결정
 - [ ] 멍삼연구소 카피를 실제 제품 정보(원재료·급여량)와 맞추기 — 사료관리법상 질병 예방·치료 등 효능 표현은 쓰지 않기
-- [ ] 공유용 대표 이미지(og:image, 1200×630) 추가
+- [x] 공유용 대표 이미지(og:image, 1200×630) 추가 — `assets/img/og-image.png` (두 페이지 공통)
 
 ## 배포 메모
 
