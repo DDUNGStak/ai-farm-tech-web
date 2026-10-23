@@ -16,7 +16,10 @@ assets/
   img/meongsam-mark.svg    멍삼연구소 로고 마크
   img/meongsam-dog.svg     멍삼연구소 강아지 일러스트
   img/og-image.png         공유용 대표 이미지 (카카오톡·SNS 미리보기, 1200×630)
+robots.txt  sitemap.xml  llms.txt   검색엔진·AI 크롤러용 (GEO)
 ```
+
+`index.html`의 자주 묻는 질문(#faq)과 `<head>`의 JSON-LD FAQPage는 같은 문구입니다. 한쪽을 고치면 다른 쪽도 함께 고칩니다.
 
 ## 자주 고칠 곳
 
@@ -34,9 +37,9 @@ python -m http.server 8790 --directory C:/Users/dygks/ai-farm-tech-web
 
 ## 공개 전 확인할 것
 
-- [ ] 스마트스토어 실제 주소 입력
+- [ ] 스마트스토어 개설 시: `config.js`에 주소를 넣고 '판매할 예정' 문구를 현재형으로 되돌리기 — `index.html`(FAQ 12번·JSON-LD·멍삼연구소 밴드), `meongsam/index.html`(설명·안내 문구), `llms.txt`
 - [ ] 사업자등록번호 입력 (법인 전환 시 상호도 `주식회사 AI팜테크` 등으로 수정)
-- [ ] 협력 기업 이름 공개 동의 확인 (`#partners` 섹션)
+- [x] 협력 기업 이름 공개 동의 확인 (2026-10-21 동의, `#partners` 섹션)
 - [ ] 문의 이메일을 대표 개인 주소 대신 `contact@` 같은 공용 주소로 바꿀지 결정
 - [ ] 멍삼연구소 카피를 실제 제품 정보(원재료·급여량)와 맞추기 — 사료관리법상 질병 예방·치료 등 효능 표현은 쓰지 않기
 - [x] 공유용 대표 이미지(og:image, 1200×630) 추가 — `assets/img/og-image.png` (두 페이지 공통)
