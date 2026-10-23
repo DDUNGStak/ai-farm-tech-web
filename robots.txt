@@ -1,0 +1,17 @@
+# AI팜테크 (ai-farm-tech.com)
+# 검색엔진과 AI 검색·답변 서비스가 공개 페이지를 읽을 수 있도록 모두 허용합니다.
+User-agent: *
+Allow: /
+
+# 학습용 AI 크롤러만 막고 싶다면 아래 주석(#)을 지우세요.
+# (검색·답변용 크롤러 OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User,
+#  PerplexityBot, Googlebot, Bingbot, Yeti(네이버), Daumoa(다음)는 계속 허용됩니다.)
+# User-agent: GPTBot
+# User-agent: ClaudeBot
+# User-agent: Google-Extended
+# User-agent: CCBot
+# User-agent: Applebot-Extended
+# User-agent: Meta-ExternalAgent
+# Disallow: /
+
+Sitemap: https://ai-farm-tech.com/sitemap.xml

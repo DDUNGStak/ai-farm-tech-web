@@ -25,6 +25,157 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 구조화 데이터 (GEO) — FAQ 문구를 고치면 본문 FAQ(#faq)와 여기를 함께 고칩니다. -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ai-farm-tech.com/#organization",
+      "name": "AI팜테크",
+      "alternateName": "AI FARM TECH",
+      "url": "https://ai-farm-tech.com/",
+      "logo": "https://ai-farm-tech.com/assets/img/mark.svg",
+      "image": "https://ai-farm-tech.com/assets/img/og-image.png",
+      "email": "ceotak@ai-farm-tech.com",
+      "description": "전북특별자치도 진안군의 인삼 스마트팜 기업. 생육 단계별 AI 환경제어와 에어로포닉스 무토양 재배 시스템을 개발하고 인삼 원료·규격 묘삼을 공급하며, 반려견 홍삼 간식 브랜드 멍삼연구소를 운영한다.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "KR",
+        "addressRegion": "전북특별자치도",
+        "addressLocality": "진안군 진안읍"
+      },
+      "knowsAbout": [
+        "인삼 스마트팜",
+        "에어로포닉스 재배",
+        "생육 단계별 환경제어",
+        "진세노사이드 HPLC 분석",
+        "인삼 원료",
+        "묘삼"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "멍삼연구소",
+        "url": "https://ai-farm-tech.com/meongsam/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ai-farm-tech.com/#website",
+      "url": "https://ai-farm-tech.com/",
+      "name": "AI팜테크",
+      "inLanguage": "ko-KR",
+      "publisher": {
+        "@id": "https://ai-farm-tech.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ai-farm-tech.com/#faq",
+      "inLanguage": "ko-KR",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "AI팜테크는 어떤 회사인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI팜테크는 전북특별자치도 진안군에 있는 인삼 스마트팜 기업입니다. 생육 단계별 AI 환경제어와 에어로포닉스(무토양 분무) 재배로 인삼을 키우는 시스템을 개발하고, 이 시스템에서 키운 인삼 원료와 규격 묘삼을 공급합니다. 반려견 홍삼 간식 브랜드 멍삼연구소도 운영합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "에어로포닉스 인삼 재배는 어떤 방식인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "흙을 쓰지 않고 뿌리를 공중에 둔 채 양액을 미세하게 분무해 키우는 방식입니다. 흙이 없어 연작장해와 토양 병해의 영향을 받지 않고, 양액은 전해수로 살균해 뿌리 환경을 깨끗하게 유지합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "인삼을 실내에서 1년 내내 재배할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI팜테크의 재배 시스템은 온도·습도·광량·광주기·CO₂·양액을 실내에서 제어해 계절과 관계없이 파종하고 수확하도록 설계했습니다. 재배 프레임은 600×600mm 트레이에 36포트를 두고 최대 5단까지 쌓도록 자체 설계했고, 시제품 재배기를 가동하며 실증하고 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "생육 단계별 환경제어란 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "인삼의 생육을 발아·초기 생육·비대의 3단계로 나누고, 단계가 바뀔 때마다 재배 조건을 자동으로 전환하는 방식입니다. 발아기에는 온도·습도·분무 주기를, 초기 생육기에는 광량·광주기·CO₂를, 비대기에는 양액 농도(EC·pH)를 중점적으로 관리합니다. 특허 출원 번호는 10-2026-0124088입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "재배 환경 설계 기준은 어떻게 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "자체 설계 사양 기준으로 온도 18–26°C, 습도 60–80%, 광량(PPFD) 150–250µmol/m²/s, 광주기 하루 14–16시간, CO₂ 600–1,000ppm, 양액 EC 0.8–1.2dS/m, 양액 pH 5.8–6.2입니다. 실증 데이터에 따라 단계별로 조정합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "진세노사이드 함량은 어떻게 확인하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HPLC(고성능 액체 크로마토그래피) 분석으로 진세노사이드 7종(Rg1·Re·Rf·Rb1·Rc·Rb2·Rd)을 정량합니다. 분석 결과는 재배 조건과 성분 함량의 관계를 데이터로 쌓고 재배 조건을 조정하는 데 씁니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "진세노사이드 3~5배는 확인된 수치인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. 노지 재배 대비 진세노사이드 함량 3~5배, 2년 재배로 6년근 수준의 성분, 뿌리썩음병 96.5% 차단은 자사 재배 설계 기준의 목표 성능입니다. 진세노사이드 함량은 HPLC 정량 분석으로, 재배 기간과 뿌리썩음병 차단은 재배 실증으로 확인하고 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "어떤 제품과 서비스를 공급하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "진세노사이드 함량을 관리하며 키운 인삼 원료를 식품·가공 기업과 소비자에게, 포트 단위로 키운 규격 묘삼을 재배 농가에 공급합니다. 재배 프레임·환경제어 소프트웨어·재배 레시피는 직접 운영하며 검증한 뒤 패키지로 묶어 농가·기업·지자체에 공급합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "인삼 원료나 묘삼 납품은 어떻게 문의하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ceotak@ai-farm-tech.com으로 품목, 필요 수량, 희망 공급 시기를 보내 주시면 공급 가능 여부와 견적을 안내해 드립니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "인삼 스마트팜 도입 상담은 어떻게 받나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ceotak@ai-farm-tech.com으로 재배 공간의 크기, 키우려는 품목, 희망 일정을 보내 주세요. 공동 연구와 투자·제휴 문의도 같은 주소로 받습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AI팜테크와 협력하는 기업은 어디인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "한솔홍삼, 월랑, 이레쉼터, 비보라랩스, 인포보스와 R&D·원료·유통 분야에서 협력하고 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "멍삼연구소는 어떤 브랜드인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "멍삼연구소는 AI팜테크가 만든 반려견 홍삼 간식 브랜드입니다. 제품은 네이버 스마트스토어에서 판매할 예정이며, 원재료와 급여량은 스마트스토어 상품 페이지에 함께 적습니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
@@ -374,6 +525,70 @@
           </div>
         </div>
         <p class="partners-note">R&amp;D·원료·유통 분야의 협력 기업입니다.</p>
+      </div>
+    </section>
+
+    <!-- ===== 자주 묻는 질문 (GEO) — 문구를 고치면 <head>의 JSON-LD FAQPage도 함께 고칩니다 ===== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="h2" id="faq-title">자주 묻는 질문</h2>
+          <p class="lead">재배 방식, 성분 분석, 공급 품목, 도입 상담에 대해 자주 받는 질문을 정리했습니다.</p>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary><h3>AI팜테크는 어떤 회사인가요?</h3></summary>
+            <p>AI팜테크는 전북특별자치도 진안군에 있는 인삼 스마트팜 기업입니다. 생육 단계별 AI 환경제어와 에어로포닉스(무토양 분무) 재배로 인삼을 키우는 시스템을 개발하고, 이 시스템에서 키운 인삼 원료와 규격 묘삼을 공급합니다. 반려견 홍삼 간식 브랜드 멍삼연구소도 운영합니다.</p>
+          </details>
+          <details>
+            <summary><h3>에어로포닉스 인삼 재배는 어떤 방식인가요?</h3></summary>
+            <p>흙을 쓰지 않고 뿌리를 공중에 둔 채 양액을 미세하게 분무해 키우는 방식입니다. 흙이 없어 연작장해와 토양 병해의 영향을 받지 않고, 양액은 전해수로 살균해 뿌리 환경을 깨끗하게 유지합니다.</p>
+          </details>
+          <details>
+            <summary><h3>인삼을 실내에서 1년 내내 재배할 수 있나요?</h3></summary>
+            <p>AI팜테크의 재배 시스템은 온도·습도·광량·광주기·CO₂·양액을 실내에서 제어해 계절과 관계없이 파종하고 수확하도록 설계했습니다. 재배 프레임은 600×600mm 트레이에 36포트를 두고 최대 5단까지 쌓도록 자체 설계했고, 시제품 재배기를 가동하며 실증하고 있습니다.</p>
+          </details>
+          <details>
+            <summary><h3>생육 단계별 환경제어란 무엇인가요?</h3></summary>
+            <p>인삼의 생육을 발아·초기 생육·비대의 3단계로 나누고, 단계가 바뀔 때마다 재배 조건을 자동으로 전환하는 방식입니다. 발아기에는 온도·습도·분무 주기를, 초기 생육기에는 광량·광주기·CO₂를, 비대기에는 양액 농도(EC·pH)를 중점적으로 관리합니다. 특허 출원 번호는 10-2026-0124088입니다.</p>
+          </details>
+          <details>
+            <summary><h3>재배 환경 설계 기준은 어떻게 되나요?</h3></summary>
+            <p>자체 설계 사양 기준으로 온도 18–26°C, 습도 60–80%, 광량(PPFD) 150–250µmol/m²/s, 광주기 하루 14–16시간, CO₂ 600–1,000ppm, 양액 EC 0.8–1.2dS/m, 양액 pH 5.8–6.2입니다. 실증 데이터에 따라 단계별로 조정합니다.</p>
+          </details>
+          <details>
+            <summary><h3>진세노사이드 함량은 어떻게 확인하나요?</h3></summary>
+            <p>HPLC(고성능 액체 크로마토그래피) 분석으로 진세노사이드 7종(Rg1·Re·Rf·Rb1·Rc·Rb2·Rd)을 정량합니다. 분석 결과는 재배 조건과 성분 함량의 관계를 데이터로 쌓고 재배 조건을 조정하는 데 씁니다.</p>
+          </details>
+          <details>
+            <summary><h3>진세노사이드 3~5배는 확인된 수치인가요?</h3></summary>
+            <p>아닙니다. 노지 재배 대비 진세노사이드 함량 3~5배, 2년 재배로 6년근 수준의 성분, 뿌리썩음병 96.5% 차단은 자사 재배 설계 기준의 목표 성능입니다. 진세노사이드 함량은 HPLC 정량 분석으로, 재배 기간과 뿌리썩음병 차단은 재배 실증으로 확인하고 있습니다.</p>
+            <!-- AI가 표의 3~5배를 확정 수치로 옮기지 않도록 목표치임을 밝히는 문항. 실증 결과가 나오면 이 답을 고칩니다 -->
+          </details>
+          <details>
+            <summary><h3>어떤 제품과 서비스를 공급하나요?</h3></summary>
+            <p>진세노사이드 함량을 관리하며 키운 인삼 원료를 식품·가공 기업과 소비자에게, 포트 단위로 키운 규격 묘삼을 재배 농가에 공급합니다. 재배 프레임·환경제어 소프트웨어·재배 레시피는 직접 운영하며 검증한 뒤 패키지로 묶어 농가·기업·지자체에 공급합니다.</p>
+          </details>
+          <details>
+            <summary><h3>인삼 원료나 묘삼 납품은 어떻게 문의하나요?</h3></summary>
+            <p>ceotak@ai-farm-tech.com으로 품목, 필요 수량, 희망 공급 시기를 보내 주시면 공급 가능 여부와 견적을 안내해 드립니다.</p>
+            <!-- TODO: 최소 주문 수량·연중 공급 가능 시기가 정해지면 이 답변(과 JSON-LD)에 추가 -->
+          </details>
+          <details>
+            <summary><h3>인삼 스마트팜 도입 상담은 어떻게 받나요?</h3></summary>
+            <p>ceotak@ai-farm-tech.com으로 재배 공간의 크기, 키우려는 품목, 희망 일정을 보내 주세요. 공동 연구와 투자·제휴 문의도 같은 주소로 받습니다.</p>
+          </details>
+          <details>
+            <summary><h3>AI팜테크와 협력하는 기업은 어디인가요?</h3></summary>
+            <p>한솔홍삼, 월랑, 이레쉼터, 비보라랩스, 인포보스와 R&amp;D·원료·유통 분야에서 협력하고 있습니다.</p>
+          </details>
+          <details>
+            <summary><h3>멍삼연구소는 어떤 브랜드인가요?</h3></summary>
+            <p>멍삼연구소는 AI팜테크가 만든 반려견 홍삼 간식 브랜드입니다. 제품은 네이버 스마트스토어에서 판매할 예정이며, 원재료와 급여량은 스마트스토어 상품 페이지에 함께 적습니다.</p>
+            <!-- 스마트스토어가 열리면 '판매할 예정이며' → '판매하며', '함께 적습니다' → '확인할 수 있습니다'로 바꿉니다 (JSON-LD도 함께) -->
+          </details>
+        </div>
       </div>
     </section>
 
