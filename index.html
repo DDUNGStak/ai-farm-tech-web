@@ -24,7 +24,12 @@
   <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 연구소(Lab) 테마 — 이 페이지에만 적용. 지우면 이전 디자인으로 돌아갑니다 -->
+  <link rel="stylesheet" href="assets/css/lab.css">
   <!-- 구조화 데이터 (GEO) — FAQ 문구를 고치면 본문 FAQ(#faq)와 여기를 함께 고칩니다. -->
   <script type="application/ld+json">
 {
@@ -200,6 +205,7 @@
       </a>
       <nav class="nav" id="site-nav" aria-label="주 메뉴">
         <a href="#about">회사소개</a>
+        <a href="#lab">연구 현장</a>
         <a href="#tech">핵심기술</a>
         <a href="#system">재배 시스템</a>
         <a href="#value">부가가치</a>
@@ -214,19 +220,29 @@
   </header>
 
   <main id="main">
-    <!-- ===== 히어로: 전면 사진 ===== -->
-    <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-bg" src="assets/img/hero-farm.jpg" alt="" width="1600" height="1151" fetchpriority="high">
-      <div class="hero-copy">
-        <p class="eyebrow">AI Ginseng Smart Farm · 전북 진안</p>
-        <h1 id="hero-title">진세노사이드를 키우는<br><em>인삼 스마트팜</em></h1>
-        <p class="lead">인삼의 생육 단계마다 온도·빛·양액을 AI가 바꿔 주고, 흙 없이 공중에서 뿌리를 키웁니다. 진세노사이드 함량이 높은 인삼을 계절과 관계없이 생산합니다.</p>
-        <div class="btn-row">
-          <a class="btn btn--green" href="#contact">스마트팜 도입 상담
-            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
-          </a>
-          <a class="btn btn--ghost" href="#tech">핵심 기술 보기</a>
+    <!-- ===== 히어로: 연구소 (왼쪽 글 + 오른쪽 연구 사진) ===== -->
+    <section class="lab-hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">AI Ginseng Research Farm · 전북 진안</p>
+          <h1 id="hero-title">진세노사이드를 키우는<br><em>인삼 스마트팜</em></h1>
+          <p class="lead">인삼의 생육 단계마다 온도·빛·양액을 AI가 바꿔 주고, 흙 없이 공중에서 뿌리를 키웁니다. 진세노사이드 함량이 높은 인삼을 계절과 관계없이 생산합니다.</p>
+          <div class="btn-row">
+            <a class="btn btn--green" href="#contact">스마트팜 도입 상담
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+            </a>
+            <a class="btn btn--line" href="#lab">연구 현장 보기</a>
+          </div>
+          <dl class="hero-meta">
+            <div><dt>Subject</dt><dd>인삼 <i>Panax ginseng</i></dd></div>
+            <div><dt>Method</dt><dd>에어로포닉스 · 단계별 환경제어</dd></div>
+            <div><dt>Analysis</dt><dd>HPLC 진세노사이드 7종</dd></div>
+          </dl>
         </div>
+        <figure class="hero-photo">
+          <img src="assets/img/lab-hero.jpg" alt="연구복을 입은 연구원 두 명이 실내 재배 트레이의 새싹을 살펴보는 모습" width="1400" height="2099" fetchpriority="high">
+          <figcaption class="specimen"><span>RESEARCH LOG</span><b>생육 단계별 관찰 · 기록</b></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -275,6 +291,65 @@
             <p>진세노사이드 함량을 분석해 품질을 수치로 확인합니다.</p>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ===== 연구 현장 — 사진은 Unsplash 무료 이미지(README 참고). 실제 연구 사진이 생기면 같은 파일명으로 교체 ===== -->
+    <section class="section section--dark section--lab" id="lab" aria-labelledby="lab-title">
+      <canvas class="beam-sweep" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Inside the Lab</p>
+          <h2 class="h2" id="lab-title">감이 아니라,<br>실험으로 키웁니다</h2>
+          <p class="lead">관찰하고, 조건을 바꾸고, 성분을 분석하고, 기록합니다. AI팜테크의 인삼 재배는 실험실의 방식으로 진행됩니다.</p>
+        </div>
+
+        <ol class="lab-steps">
+          <li class="lab-step reveal">
+            <img src="assets/img/lab-tray.jpg" alt="연구복을 입은 연구원이 새싹이 자란 재배 트레이를 들고 있는 모습" width="1100" height="734" loading="lazy">
+            <span class="code">STEP 01 · OBSERVE</span>
+            <h3>생육 관찰</h3>
+            <p>트레이·포트 단위로 생육 상태를 관찰하고 기록합니다.</p>
+          </li>
+          <li class="lab-step reveal reveal-d1">
+            <img src="assets/img/lab-chamber.jpg" alt="연구복을 입은 연구원이 선반에 놓인 재배 챔버를 점검하는 모습" width="1100" height="733" loading="lazy">
+            <span class="code">STEP 02 · CONTROL</span>
+            <h3>환경 설정</h3>
+            <p>온도·습도·광·양액 조건을 생육 단계에 맞춰 설정합니다.</p>
+          </li>
+          <li class="lab-step reveal reveal-d2">
+            <img src="assets/img/lab-sample.jpg" alt="장갑을 낀 연구원이 실험대에서 시료를 다루는 모습" width="1100" height="1650" loading="lazy">
+            <span class="code">STEP 03 · PREPARE</span>
+            <h3>시료 준비</h3>
+            <p>수확한 뿌리를 성분 분석용 시료로 준비합니다.</p>
+          </li>
+          <li class="lab-step reveal reveal-d3">
+            <img src="assets/img/lab-bench.jpg" alt="연구복을 입은 연구원이 분석 장비가 놓인 실험대에서 작업하는 모습" width="1100" height="734" loading="lazy">
+            <span class="code">STEP 04 · ANALYZE</span>
+            <h3>성분 분석</h3>
+            <p>HPLC로 진세노사이드 7종을 정량하고, 결과를 다음 재배 조건에 반영합니다.</p>
+          </li>
+        </ol>
+
+        <figure class="chroma reveal">
+          <figcaption>
+            <span class="code">FIG. 1</span>
+            <b>HPLC 진세노사이드 7종 분리</b>
+            <small>개념도 — 이해를 돕기 위한 예시 그림이며 실측 데이터가 아닙니다.</small>
+          </figcaption>
+          <svg viewBox="0 0 800 220" role="img" aria-label="Rg1, Re, Rf, Rb1, Rc, Rb2, Rd 일곱 성분이 분석 시간 순서대로 봉우리로 나타나는 크로마토그램 개념도">
+            <path class="gl" d="M40 60H780M40 100H780M40 140H780"/>
+            <path class="ax" d="M40 20V190H780"/>
+            <path class="tr" pathLength="1" d="M40,178.7 L42,178.7 L44,178.6 L46,178.5 L48,178.5 L50,178.4 L52,178.4 L54,178.3 L56,178.3 L58,178.2 L60,178.1 L62,178.1 L64,178.0 L66,178.0 L68,177.9 L70,177.9 L72,177.8 L74,177.8 L76,177.8 L78,177.7 L80,177.7 L82,177.6 L84,177.6 L86,177.6 L88,177.5 L90,177.5 L92,177.4 L94,177.4 L96,177.4 L98,177.3 L100,177.3 L102,177.3 L104,177.3 L106,177.2 L108,177.2 L110,177.2 L112,177.2 L114,177.1 L116,177.1 L118,177.1 L120,177.1 L122,177.1 L124,177.0 L126,177.0 L128,176.9 L130,176.7 L132,176.0 L134,174.4 L136,171.0 L138,164.6 L140,154.1 L142,139.2 L144,121.2 L146,103.3 L148,90.0 L150,85.0 L152,90.0 L154,103.3 L156,120.9 L158,138.4 L160,151.9 L162,159.5 L164,160.5 L166,155.0 L168,144.0 L170,129.5 L172,114.6 L174,103.4 L176,99.2 L178,103.5 L180,114.8 L182,130.0 L184,145.3 L186,157.9 L188,166.8 L190,172.3 L192,175.2 L194,176.6 L196,177.2 L198,177.5 L200,177.6 L202,177.6 L204,177.7 L206,177.7 L208,177.8 L210,177.8 L212,177.9 L214,177.9 L216,178.0 L218,178.0 L220,178.1 L222,178.1 L224,178.2 L226,178.2 L228,178.3 L230,178.3 L232,178.4 L234,178.5 L236,178.5 L238,178.6 L240,178.6 L242,178.7 L244,178.7 L246,178.8 L248,178.9 L250,178.9 L252,179.0 L254,179.1 L256,179.1 L258,179.2 L260,179.2 L262,179.3 L264,179.4 L266,179.4 L268,179.5 L270,179.6 L272,179.6 L274,179.7 L276,179.8 L278,179.8 L280,179.9 L282,180.0 L284,180.0 L286,180.1 L288,180.2 L290,180.2 L292,180.3 L294,180.4 L296,180.4 L298,180.5 L300,180.6 L302,180.6 L304,180.7 L306,180.7 L308,180.6 L310,180.3 L312,179.7 L314,178.5 L316,176.5 L318,173.3 L320,169.0 L322,163.6 L324,157.8 L326,152.5 L328,148.8 L330,147.5 L332,148.9 L334,152.7 L336,158.1 L338,164.0 L340,169.5 L342,174.0 L344,177.3 L346,179.4 L348,180.7 L350,181.5 L352,181.8 L354,182.0 L356,182.1 L358,182.2 L360,182.3 L362,182.3 L364,182.4 L366,182.4 L368,182.4 L370,182.5 L372,182.5 L374,182.5 L376,182.6 L378,182.6 L380,182.6 L382,182.7 L384,182.7 L386,182.7 L388,182.8 L390,182.8 L392,182.8 L394,182.8 L396,182.9 L398,182.9 L400,182.9 L402,182.9 L404,182.9 L406,182.9 L408,183.0 L410,183.0 L412,183.0 L414,183.0 L416,183.0 L418,183.0 L420,183.0 L422,183.0 L424,183.0 L426,183.0 L428,183.0 L430,183.0 L432,183.0 L434,183.0 L436,183.0 L438,183.0 L440,182.9 L442,182.9 L444,182.8 L446,182.6 L448,182.0 L450,180.8 L452,178.3 L454,173.7 L456,166.0 L458,154.3 L460,138.1 L462,118.2 L464,96.8 L466,77.4 L468,63.6 L470,58.6 L472,63.5 L474,77.2 L476,96.6 L478,117.9 L480,137.7 L482,153.9 L484,165.6 L486,173.2 L488,177.7 L490,180.1 L492,181.3 L494,181.8 L496,182.0 L498,182.0 L500,182.0 L502,181.9 L504,181.8 L506,181.6 L508,181.3 L510,180.5 L512,179.0 L514,176.3 L516,171.8 L518,164.9 L520,155.5 L522,143.9 L524,131.5 L526,120.1 L528,112.1 L530,109.2 L532,112.0 L534,119.9 L536,131.1 L538,143.4 L540,154.9 L542,164.2 L544,171.0 L546,175.4 L548,177.9 L550,179.3 L552,179.9 L554,180.2 L556,180.2 L558,180.2 L560,180.0 L562,179.7 L564,179.1 L566,177.9 L568,175.7 L570,172.0 L572,166.4 L574,158.8 L576,149.5 L578,139.4 L580,130.3 L582,123.8 L584,121.4 L586,123.6 L588,130.0 L590,139.0 L592,148.9 L594,158.2 L596,165.7 L598,171.1 L600,174.6 L602,176.7 L604,177.8 L606,178.3 L608,178.5 L610,178.5 L612,178.5 L614,178.5 L616,178.4 L618,178.3 L620,178.3 L622,178.2 L624,178.2 L626,178.1 L628,178.1 L630,178.0 L632,178.0 L634,177.9 L636,177.9 L638,177.8 L640,177.8 L642,177.7 L644,177.7 L646,177.7 L648,177.6 L650,177.6 L652,177.5 L654,177.5 L656,177.5 L658,177.4 L660,177.4 L662,177.3 L664,177.1 L666,176.8 L668,176.2 L670,175.2 L672,173.6 L674,171.0 L676,167.2 L678,162.2 L680,156.1 L682,149.2 L684,142.4 L686,136.5 L688,132.5 L690,131.1 L692,132.5 L694,136.4 L696,142.3 L698,149.1 L700,155.9 L702,162.1 L704,167.1 L706,170.8 L708,173.3 L710,175.0 L712,176.0 L714,176.5 L716,176.8 L718,176.9 L720,177.0 L722,177.0 L724,177.0 L726,177.1 L728,177.1 L730,177.1 L732,177.1 L734,177.1 L736,177.2 L738,177.2 L740,177.2 L742,177.2 L744,177.3 L746,177.3 L748,177.3 L750,177.3 L752,177.4 L754,177.4 L756,177.4 L758,177.5 L760,177.5 L762,177.5 L764,177.6 L766,177.6 L768,177.7 L770,177.7 L772,177.8 L774,177.8 L776,177.8 L778,177.9 L780,177.9"/>
+            <g class="pk" text-anchor="middle">
+              <text x="140" y="75">Rg1</text><text x="186" y="89">Re</text><text x="330" y="138">Rf</text><text x="470" y="49">Rb1</text><text x="530" y="99">Rc</text><text x="584" y="111">Rb2</text><text x="690" y="121">Rd</text>
+            </g>
+            <g class="tk" text-anchor="middle">
+              <text x="40" y="208">0</text><text x="188" y="208">10</text><text x="336" y="208">20</text><text x="484" y="208">30</text><text x="632" y="208">40</text><text x="764" y="208">min</text>
+            </g>
+            <text class="tk" x="48" y="16">mAU</text>
+          </svg>
+        </figure>
       </div>
     </section>
 
@@ -395,7 +470,89 @@
           <p class="lead">뿌리·잎·줄기까지, 진세노사이드가 높을수록 인삼의 쓰임은 넓어집니다. 같은 인삼 한 주를 키워도 노지 재배와는 다른 가치를 만듭니다.</p>
         </div>
 
-        <h3 class="value-sub reveal"><span class="num" aria-hidden="true">01</span>어디에 쓰이나<small>고함량 인삼의 활용처</small></h3>
+        <!-- 부위별 활용 지도 — 부위를 누르면 그림·설명·분야가 함께 바뀝니다 (assets/js/lab.js) -->
+        <h3 class="value-sub reveal"><span class="num" aria-hidden="true">01</span>인삼 한 주의 쓰임<small>부위마다 쓰이는 곳이 다릅니다 — 부위를 눌러 보세요</small></h3>
+        <div class="usemap reveal">
+          <figure class="usemap-plate">
+            <svg viewBox="0 0 360 560" role="img" aria-labelledby="plate-title">
+              <title id="plate-title">인삼 한 주의 부위 그림 — 열매, 잎·줄기, 뿌리(주근), 세근</title>
+              <defs><path id="leaflet" d="M0 0C9-12 11-36 0-54C-11-36-9-12 0 0Z"/></defs>
+              <g class="tray" aria-hidden="true">
+                <rect x="30" y="262" width="300" height="8" rx="1"/>
+                <text x="32" y="254">TRAY</text>
+                <text x="32" y="292">AIR · MIST</text>
+              </g>
+              <g class="mist" aria-hidden="true">
+                <circle cx="96" cy="318" r="1.6" style="animation-delay:-.4s"/><circle cx="128" cy="396" r="1.4" style="animation-delay:-2.1s"/><circle cx="104" cy="452" r="1.8" style="animation-delay:-1.2s"/><circle cx="146" cy="300" r="1.3" style="animation-delay:-3s"/><circle cx="222" cy="312" r="1.6" style="animation-delay:-1.7s"/><circle cx="258" cy="380" r="1.4" style="animation-delay:-.9s"/><circle cx="276" cy="440" r="1.7" style="animation-delay:-2.6s"/><circle cx="210" cy="528" r="1.3" style="animation-delay:-3.4s"/><circle cx="92" cy="512" r="1.5" style="animation-delay:-1.5s"/><circle cx="292" cy="330" r="1.3" style="animation-delay:-2.9s"/>
+              </g>
+              <g class="part part--leaf" data-part="leaf">
+                <path class="stem" d="M180 262C178 220 182 186 180 150M180 150C160 140 130 132 105 128M180 150C200 140 230 132 255 128M180 150C170 128 160 108 150 92M180 150C186 120 192 86 197 58"/>
+                <use href="#leaflet" transform="translate(105 128) rotate(-131) scale(.62)"/><use href="#leaflet" transform="translate(105 128) rotate(-103) scale(.85)"/><use href="#leaflet" transform="translate(105 128) rotate(-75)"/><use href="#leaflet" transform="translate(105 128) rotate(-47) scale(.85)"/><use href="#leaflet" transform="translate(105 128) rotate(-19) scale(.62)"/>
+                <use href="#leaflet" transform="translate(255 128) rotate(19) scale(.62)"/><use href="#leaflet" transform="translate(255 128) rotate(47) scale(.85)"/><use href="#leaflet" transform="translate(255 128) rotate(75)"/><use href="#leaflet" transform="translate(255 128) rotate(103) scale(.85)"/><use href="#leaflet" transform="translate(255 128) rotate(131) scale(.62)"/>
+                <use href="#leaflet" transform="translate(150 92) rotate(-81) scale(.55)"/><use href="#leaflet" transform="translate(150 92) rotate(-53) scale(.75)"/><use href="#leaflet" transform="translate(150 92) rotate(-25) scale(.9)"/><use href="#leaflet" transform="translate(150 92) rotate(3) scale(.75)"/><use href="#leaflet" transform="translate(150 92) rotate(31) scale(.55)"/>
+              </g>
+              <g class="part part--berry" data-part="berry">
+                <circle cx="198" cy="49" r="6"/><circle cx="188" cy="54" r="5.5"/><circle cx="208" cy="54" r="5.5"/><circle cx="192" cy="41" r="5.5"/><circle cx="204" cy="41" r="5.5"/><circle cx="198" cy="33" r="5"/>
+              </g>
+              <g class="part part--fine" data-part="fine">
+                <path d="M136 480C128 500 140 514 131 540M139 474C150 496 145 512 156 532M240 478C238 500 250 512 245 540M236 470C224 494 230 514 218 534M180 430C177 458 186 482 179 522M164 332C152 338 144 346 134 354M196 350C210 356 218 366 228 372M168 396C156 404 150 416 142 424M190 404C200 414 206 424 210 436"/>
+              </g>
+              <g class="part part--root" data-part="root">
+                <path class="body" d="M168 372C158 404 146 440 132 478C130 486 137 488 140 481C153 448 165 416 174 392Z"/>
+                <path class="body" d="M193 374C205 404 220 440 236 476C239 484 245 482 243 474C230 442 214 408 196 382Z"/>
+                <path class="body" d="M174 284C162 300 160 340 166 378C171 404 176 418 180 430C184 418 190 404 194 378C200 340 198 300 186 284Z"/>
+                <path class="body" d="M172 270h16l-2 15h-12z"/>
+                <path class="ring" d="M168 304q12 4 24 0M166 322q14 4 28 0M166 340q14 4 28 0M167 358q13 4 26 0"/>
+              </g>
+              <g class="co" data-part="berry"><path d="M210 46H326"/><circle class="dot" cx="210" cy="46" r="2.5"/><circle class="badge" cx="338" cy="46" r="11"/><text x="338" y="50">01</text></g>
+              <g class="co" data-part="leaf"><path d="M262 116H326"/><circle class="dot" cx="262" cy="116" r="2.5"/><circle class="badge" cx="338" cy="116" r="11"/><text x="338" y="120">02</text></g>
+              <g class="co" data-part="root"><path d="M196 330H326"/><circle class="dot" cx="196" cy="330" r="2.5"/><circle class="badge" cx="338" cy="330" r="11"/><text x="338" y="334">03</text></g>
+              <g class="co" data-part="fine"><path d="M246 506H326"/><circle class="dot" cx="246" cy="506" r="2.5"/><circle class="badge" cx="338" cy="506" r="11"/><text x="338" y="510">04</text></g>
+            </svg>
+            <figcaption class="code">PLATE 01 · <i>Panax ginseng</i> C.A. Meyer</figcaption>
+          </figure>
+
+          <div class="usemap-info">
+            <div class="usemap-tabs" aria-label="인삼 부위 선택">
+              <button type="button" data-part="berry" aria-pressed="false"><span>01</span>열매</button>
+              <button type="button" data-part="leaf" aria-pressed="false"><span>02</span>잎·줄기</button>
+              <button type="button" data-part="root" aria-pressed="true"><span>03</span>뿌리</button>
+              <button type="button" data-part="fine" aria-pressed="false"><span>04</span>세근</button>
+            </div>
+            <div class="usemap-panels" aria-live="polite">
+              <div class="usemap-panel" data-panel="berry">
+                <p class="code">PART 01 · BERRY</p>
+                <h4>열매</h4>
+                <p>여름에 붉게 익는 인삼 열매입니다. 열매 추출물은 화장품과 음료·식품 원료로 쓰입니다.</p>
+              </div>
+              <div class="usemap-panel" data-panel="leaf">
+                <p class="code">PART 02 · LEAF &amp; STEM</p>
+                <h4>잎·줄기</h4>
+                <p>땅 위로 자라는 잎과 줄기에도 진세노사이드가 들어 있습니다. 차와 추출물, 화장품 소재로 쓰입니다.</p>
+              </div>
+              <div class="usemap-panel is-on" data-panel="root">
+                <p class="code">PART 03 · MAIN ROOT</p>
+                <h4>뿌리 (주근)</h4>
+                <p>인삼의 몸통입니다. 수삼·홍삼으로 가공되어 건강기능식품과 식품 원료가 됩니다. AI팜테크는 진세노사이드 함량을 분석하며 키운 뿌리를 원료로 공급합니다.</p>
+              </div>
+              <div class="usemap-panel" data-panel="fine">
+                <p class="code">PART 04 · FINE ROOT</p>
+                <h4>세근 (미삼)</h4>
+                <p>주근에서 갈라져 나온 가는 뿌리입니다. 진세노사이드 농도가 높은 편이라 추출물과 홍삼 농축액 원료로 쓰입니다.</p>
+              </div>
+            </div>
+            <p class="usemap-label">쓰이는 분야</p>
+            <ul class="usemap-uses">
+              <li data-for="root fine">건강기능식품</li>
+              <li data-for="root fine">홍삼 가공</li>
+              <li data-for="berry leaf">화장품 · 바이오 소재</li>
+              <li data-for="berry leaf root">식품 · 음료</li>
+              <li data-for="root">반려동물 간식</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="value-sub reveal"><span class="num" aria-hidden="true">02</span>어디에 쓰이나<small>고함량 인삼의 활용처</small></h3>
         <div class="tech-grid value-grid">
           <article class="tech-card reveal">
             <div class="icon" aria-hidden="true">
@@ -447,7 +604,27 @@
           </article>
         </div>
 
-        <h3 class="value-sub reveal"><span class="num" aria-hidden="true">02</span>얼마나 가치 있나<small>같은 인삼 1주를 키울 때, 노지 재배와 비교</small></h3>
+        <h3 class="value-sub reveal"><span class="num" aria-hidden="true">03</span>얼마나 가치 있나<small>같은 인삼 1주를 키울 때, 노지 재배와 비교</small></h3>
+        <div class="bars">
+          <article class="bar-card reveal">
+            <p class="code">METRIC 01 · 설계 목표</p>
+            <h4>6년근 수준 성분까지</h4>
+            <div class="bar-row"><span class="bar-name">노지</span><span class="bar-track"><i class="bar" style="--v:1"></i></span><b>6년</b></div>
+            <div class="bar-row is-us"><span class="bar-name">AI팜테크</span><span class="bar-track"><i class="bar" style="--v:.333"></i></span><b>2년</b></div>
+          </article>
+          <article class="bar-card reveal reveal-d1">
+            <p class="code">METRIC 02 · 설계 목표</p>
+            <h4>진세노사이드 함량</h4>
+            <div class="bar-row"><span class="bar-name">노지</span><span class="bar-track"><i class="bar" style="--v:.2"></i></span><b>1배</b></div>
+            <div class="bar-row is-us"><span class="bar-name">AI팜테크</span><span class="bar-track"><i class="bar bar--range" style="--v:1"></i><i class="bar" style="--v:.6"></i></span><b>3~5배</b></div>
+          </article>
+          <article class="bar-card reveal reveal-d2">
+            <p class="code">METRIC 03 · 설계 목표</p>
+            <h4>같은 바닥 면적 재배량</h4>
+            <div class="bar-row"><span class="bar-name">노지</span><span class="bar-track"><i class="bar" style="--v:.2"></i></span><b>1배</b></div>
+            <div class="bar-row is-us"><span class="bar-name">AI팜테크</span><span class="bar-track"><i class="bar" style="--v:1"></i></span><b>5배</b></div>
+          </article>
+        </div>
         <div class="compare reveal">
           <div class="compare-scroll">
             <table class="compare-table">
@@ -665,5 +842,6 @@
 
   <script src="assets/js/config.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/lab.js"></script>
 </body>
 </html>

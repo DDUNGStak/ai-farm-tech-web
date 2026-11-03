@@ -10,6 +10,9 @@
 ```
 assets/
   css/style.css      공통 스타일 (아래쪽에 멍삼연구소 전용 스타일)
+  css/lab.css        연구소(Lab) 테마 — 메인(index.html)에만 적용. 링크를 지우면 이전 디자인
+  js/lab.js          연구소 테마 움직임 — 빛줄기 배경·숫자 카운트업·인삼 부위별 활용 지도
+  img/lab-*.jpg      연구 현장 사진 (Unsplash 무료 이미지, 아래 '사진 출처')
   js/config.js       ★ 스마트스토어 주소·회사 정보 — 여기만 고치면 전체 반영
   js/main.js         메뉴·스크롤 효과·config 값 채우기
   img/mark.svg             AI팜테크 로고 마크 (파비콘 겸용)
@@ -43,6 +46,19 @@ python -m http.server 8790 --directory C:/Users/dygks/ai-farm-tech-web
 - [ ] 문의 이메일을 대표 개인 주소 대신 `contact@` 같은 공용 주소로 바꿀지 결정
 - [ ] 멍삼연구소 카피를 실제 제품 정보(원재료·급여량)와 맞추기 — 사료관리법상 질병 예방·치료 등 효능 표현은 쓰지 않기
 - [x] 공유용 대표 이미지(og:image, 1200×630) 추가 — `assets/img/og-image.png` (두 페이지 공통)
+
+## 사진 출처
+
+`assets/img/lab-*.jpg`는 Unsplash 라이선스(상업적 사용 가능, 출처 표기 의무 없음) 이미지입니다.
+실제 연구원 사진을 찍으면 **같은 파일명으로 덮어쓰기**만 하면 됩니다.
+
+| 파일 | 원본 |
+|---|---|
+| lab-hero.jpg | https://unsplash.com/photos/qb6xk8HaJs8 |
+| lab-tray.jpg | https://unsplash.com/photos/buaG9Lh16VQ |
+| lab-chamber.jpg | https://images.unsplash.com/photo-1597765654576-f23f48b956ad |
+| lab-sample.jpg | https://images.unsplash.com/photo-1760074032615-2e35d8c5e5ae |
+| lab-bench.jpg | https://unsplash.com/photos/8yS04veb1TQ |
 
 ## 배포 메모
 
