@@ -254,14 +254,11 @@ button { font: inherit; color: inherit; }
   .facts li { padding: 22px 12px 24px; }
 }
 
-/* ---------- 회사소개 (가운데 정렬 + 사진) ---------- */
+/* ---------- 회사소개 (가운데 정렬) ---------- */
 .intro { text-align: center; }
 .intro .h2 { max-width: 820px; margin: 0 auto; }
 .intro-copy { max-width: 760px; margin: 22px auto 0; }
 .intro-copy p { font-size: clamp(17px, 1.5vw, 18.5px); color: #34403a; }
-.intro-photo { margin: clamp(36px, 5vw, 56px) auto 0; max-width: 980px; }
-.intro-photo img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); }
-.intro-photo figcaption { font-size: 14px; color: var(--muted); margin-top: 12px; }
 .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: clamp(40px, 6vw, 64px); text-align: left; }
 .pillar {
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);

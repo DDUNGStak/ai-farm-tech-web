@@ -171,10 +171,6 @@ main > .section { counter-increment: sec; }
 .intro .h2 { margin: 0; max-width: none; }
 .intro-copy { max-width: none; margin: 28px 0 0; columns: 2; column-gap: clamp(32px, 6vw, 96px); }
 .intro-copy p { color: #35413c; break-inside: avoid; }
-.intro-photo { max-width: none; }
-.intro-photo img { border-radius: var(--radius-sm); box-shadow: none; }
-.intro-photo figcaption { font-family: var(--mono); font-size: 12.5px; }
-.intro-photo figcaption::before { content: "PHOTO — "; color: var(--green-text); }
 .pillar { border-radius: var(--radius); }
 .pillar .num {
   width: auto; height: auto; padding: 2px 8px; border-radius: 3px;
